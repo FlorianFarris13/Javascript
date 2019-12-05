@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Creation d'un formulaires JavaScript</title>
+</head>
+<body>
+	<form action="life.html" method="post" id="formulaire" onsubmit="return valider()">
+		<h1>Formulaire d'inscritption</h1>
+		<p>
+			<label for="pseudo">Pseudo</label> :
+			<input type="text" name="pseudo" id="pseudo" placeholder="Pseudo">
+		</p>
+		<p>
+			<label for="nom">Votre nom</label>:
+			<input type="text" name="nom" id="nom" placeholder="Nom" >
+			<span id="aideNom"></span>
+		</p>
+		<p>
+			<label for="prenom">Votre Prenom</label>:
+			<input type="text" name="prenom" id="prenom" placeholder="Prenom" >
+		<p>
+			<label for="mdp">Mot de passe</label> :
+            <input type="password" name="mdp" id="mdp" placeholder="Mot de passe" >
+		</p>
+		  <p>
+            <label for="courriel">Courriel</label> :
+            <input type="email" name="courriel" id="courriel" placeholder="utilisateur@domaine.fr">
+            <span id="aideCourriel"></span>
+        </p>
+        <p>
+        	<label>Date de Naissance : </label>
+        	<input type="text" id="DateNais" name="dateNais">
+        </p>
+        <p>
+            <label for="sexe">Sexe :</label>
+            <select name="sexe" id="sexe" required>
+                <option value="H" selected>Homme</option>
+                <option value="F">Femme</option>
+            </select>
+        </p>
+        <p id="error" style="color:red"></p>
+			<input type="submit" value="Envoyer">
+	</form>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
